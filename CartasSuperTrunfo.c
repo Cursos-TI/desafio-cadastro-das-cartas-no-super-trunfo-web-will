@@ -26,7 +26,7 @@ int main() {
 
     printf ("População: ");
     scanf ("%d", &populacao);
-
+    
     printf ("Área (km2): ");
     scanf ("%f", &area);
 
