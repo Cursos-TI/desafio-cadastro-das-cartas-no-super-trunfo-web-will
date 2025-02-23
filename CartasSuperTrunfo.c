@@ -37,16 +37,14 @@ int main() {
     scanf ("%d", &pontos_turisticos);
 
 
-    if (area > 0) { densidade_populacional = 0;
-    }
-    else { densidade_populacional = 0;
+    if (area > 0) { 
+        densidade_populacional = populacao / area;
+    }else { densidade_populacional = 0;
     }
 
     if (populacao > 0) {
         pib_per_capita = pib / populacao;
-    }
-
-    else {
+    }else {
         pib_per_capita = 0;
     }
 
@@ -59,8 +57,8 @@ int main() {
     printf ("Área: %f Km2\n", area);
     printf ("PIB: R$ %f\n", pib);
     printf ("Número de Pontos Turísticos: %d\n", pontos_turisticos);
-    printf("Densidade Populacional: %2.f Hab/km2\n", densidade_populacional);
-    printf("Pib per Capita: R$ %2.f Bilhões/Hab \n", pib_per_capita);
+    printf("Densidade Populacional: %.2f Hab/km2\n", densidade_populacional);
+    printf("Pib per Capita: R$ %.2f Bilhões/Hab \n", pib_per_capita);
 
 
     return 0;
