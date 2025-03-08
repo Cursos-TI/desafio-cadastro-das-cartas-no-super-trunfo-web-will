@@ -22,8 +22,7 @@ int main() {
     scanf("%s", estado1);
 
     printf ("Cidade: ");
-    getchar(); // Limpa o buffer para evitar problemas no fgets
-    fgets(cidade1, sizeof(cidade1), stdin);
+    scanf("%s", cidade1);
 
     printf ("População: ");
     scanf ("%lu", &populacao1);
@@ -45,9 +44,7 @@ int main() {
     scanf("%s", estado2);
 
     printf ("Cidade: ");
-    getchar(); // Limpa o buffer
-    fgets(cidade2, sizeof(cidade2), stdin);
-    cidade2[strcspn(cidade2, "\n")] = '\0';
+    scanf("%s", cidade2);
 
     printf ("População: ");
     scanf ("%lu", &populacao2);
